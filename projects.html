@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects | Joonha</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="navbar"></div>
+      <script>
+        fetch("navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar").innerHTML = data;
+          });
+      </script>
+    </header>
+
+    <main class="wrap">
+      <h1>Projects</h1>
+      <section>
+        <article class="project">
+          <div class="media">
+            <img src="assets/images/Zapcraft.jpg" alt="Zapcraft" />
+          </div>
+          <div class="content">
+            <h2>Zapcraft</h2>
+            <p>
+              A device that electrocutes you when you lose hearts in Minecraft.
+              Built using a salvaged electric bug swatter, featuring Bluetooth
+              connectivity and a rechargeable battery.
+            </p>
+            <time datetime="2020">2020</time>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="media">
+            <video
+              src="assets/videos/Ankube.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+          </div>
+          <div class="content" , style="margin-right: 5rem">
+            <h2>Ankube</h2>
+            <p>
+              A software that incorporates a digital model of a Rubik’s Cube to
+              flashcard app Anki to help memorize Cube algorithms.
+              <a href="https://github.com/JoonhaYi/Ankube">GitHub</a>
+            </p>
+            <time datetime="2023">2023</time>
+          </div>
+        </article>
+
+        <article
+          class="project"
+          ,
+          style="padding-left: 4rem; padding-right: 4rem"
+        >
+          <div class="media">
+            <video
+              src="assets/videos/robocar.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+          </div>
+          <div class="content">
+            <h2>Robocar</h2>
+            <p>
+              A mini autonomous car that scans its surroundings using
+              ultrasound. Utilizes an H-bridge circuit for steering.
+            </p>
+            <time datetime="2019">2019</time>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="media">
+            <img
+              src="assets/images/neuralnet.png"
+              style="border: 2px solid gray"
+            />
+          </div>
+          <div class="content" , style="margin-right: 6rem">
+            <h2>Neural Network</h2>
+            <p>
+              A neural network that recognizes bunny images built from complete
+              scratch only using NumPy. Features all regularization and
+              optimization techniques like dropout, RMS prop, and batch
+              normalization.
+              <a href="https://github.com/JoonhaYi/NeuralNetFromScratch"
+                >GitHub</a
+              >
+            </p>
+            <time datetime="2024">2024</time>
+          </div>
+        </article>
+
+        <article
+          class="project"
+          ,
+          style="padding-left: 4rem; padding-right: 4rem"
+        >
+          <div class="media">
+            <div class="interactive">
+              <img src="assets/images/teslacoil.jpg" />
+              <video
+                src="assets/videos/tc.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+              ></video>
+            </div>
+          </div>
+          <div class="content">
+            <h2>Tesla Coil V3</h2>
+            <p>
+              A Tesla coil that generates around 20,000 volts, featuring a
+              hand-wound secondary coil with over 1500 turns and a 3D-printed
+              primary coil holder. This is version 3 of my Tesla coil projects.
+            </p>
+            <time datetime="2022">2023</time>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="media">
+            <video
+              src="assets/videos/gol.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+          </div>
+          <div class="content">
+            <h2>Game of Life</h2>
+            <p>An implementation of Conway’s Game of Life made with Python.</p>
+            <time datetime="2023">2023</time>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="media">
+            <img
+              src="assets/images/shakingtorch.jpg"
+              style="border: 2px solid gray"
+            />
+          </div>
+          <div class="content">
+            <h2>Shaking Torch</h2>
+            <p>
+              A flashlight that harvests energy from shaking motion using a
+              magnet and coil. Uses a supercapacitor with a Joule-thief circuit
+              to store and retrieve energy.
+            </p>
+            <time datetime="2020">2020</time>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="media">
+            <img src="assets/images/hackingtools.png" />
+          </div>
+          <div class="content" , style="margin-right: 4rem">
+            <h2>Hacking Tools</h2>
+            <p>
+              Built hacking tools like an ARP spoofer or a Backdoor with python.
+            </p>
+            <time datetime="2022">2022</time>
+          </div>
+        </article>
+
+        <article
+          class="project"
+          ,
+          style="padding-left: 4rem; padding-right: 4rem"
+        >
+          <div class="media">
+            <div class="interactive">
+              <img src="assets/images/timefreezer.jpg" />
+              <video
+                src="assets/videos/freezer.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+              ></video>
+            </div>
+          </div>
+          <div class="content">
+            <h2>PulseFreezer</h2>
+            <p>
+              A device that sends out pulsed flashes of light to create an
+              illusion of stopping or slowing down water drops and fans.
+            </p>
+            <time datetime="2020">2020</time>
+          </div>
+        </article>
+      </section>
+
+      <section class="notice">
+        <h2>Special Notice</h2>
+        <p style="margin-top: 0">
+          If you noticed a sharp decline in hands-on projects after 2023, That’s
+          because it was when I moved back to Korea and had to leave behind most
+          of my tools and components. I’ve mostly been doing coding projects and
+          research since then.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

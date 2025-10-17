@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Joonha</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="navbar"></div>
+      <script>
+        fetch("navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar").innerHTML = data;
+          });
+      </script>
+    </header>
+    <main class="wrap">
+      <h1>Joonha Yi</h1>
+      <section>
+        <article>
+          <div class="media">
+            <img src="assets/images/project3.jpg" alt="face reveal soon" />
+          </div>
+          <div>
+            <h2>About me</h2>
+            <p>Yo, welcome to my website! here's a few things about me:</p>
+            <ul>
+              <li>Homeschooled (closer to being self taught)</li>
+              <li>A korean who grew up in Saudi Arabia</li>
+              <li>
+                Preparing for US college admission (currently 11th grade
+                equivalent)
+              </li>
+              <li>Loves physics and math</li>
+              <li>A vibe coder</li>
+              <li>A tinkerer</li>
+              <li>An active stargazer who loves anything to do with space</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="content">
+            <h2>Background</h2>
+            <p>
+              Bio coming soon (I worked my ass off finishing this for PAEG, so
+              if you're from PAEG, I'm pretty sure you already went over like
+              few dozen applications and is happy to not go over another bio)
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

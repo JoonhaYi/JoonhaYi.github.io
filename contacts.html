@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Joonha</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="navbar"></div>
+      <script>
+        fetch("navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar").innerHTML = data;
+          });
+      </script>
+    </header>
+    <main class="contacts_wrap">
+      <h1>Contacts</h1>
+      <section class="contact_list">
+        <a href="mailto:joonhayi@gmail.com">
+          <section class="contact">
+            <div class="media" , style="max-width: 20%" , href="google.com">
+              <img src="assets/icons/gmail_icon.png" />
+            </div>
+            <div class="contact_content">
+              <h2>Email</h2>
+              <p>JoonhaYi@gmail.com</p>
+            </div>
+          </section>
+        </a>
+        <a href="https://discord.com/users/joonhayi">
+          <section class="contact">
+            <div class="media" , style="max-width: 20%">
+              <img src="assets/icons/discord_icon.png" />
+            </div>
+            <div class="contact_content">
+              <h2>Discord</h2>
+              <p>joonhayi</p>
+            </div>
+          </section>
+        </a>
+        <a href="https://github.com/JoonhaYi">
+          <section class="contact">
+            <div class="media" , style="max-width: 20%">
+              <img src="assets/icons/github_icon.png" />
+            </div>
+            <div class="contact_content">
+              <h2>Github</h2>
+              <p>github.com/JoonhaYi</p>
+            </div>
+          </section>
+        </a>
+        <a href="https://www.instagram.com/joonhayi">
+          <section class="contact">
+            <div class="media" , style="max-width: 20%">
+              <img src="assets/icons/instagram_icon.png" />
+            </div>
+            <div class="contact_content">
+              <h2>Instagram</h2>
+              <p>@joonhayi</p>
+            </div>
+          </section>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>

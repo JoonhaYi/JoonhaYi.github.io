@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Research | Joonha</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="navbar"></div>
+      <script>
+        fetch("navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar").innerHTML = data;
+          });
+      </script>
+    </header>
+    <main class="wrap">
+      <h1>Research</h1>
+      <section>
+        <article>
+          <div class="content">
+            <h2>Pulsar Science Collaboratory</h2>
+            <p>
+              Currently part of the Pulsar Science Collaboratory, analyzing
+              radio telescope data to find new pulsars. Has analyzed over 3000
+              prepfold plots. Also meets with the UW Bothell PSC team every
+              week, presenting a part of a scientific paper.
+            </p>
+          </div>
+          <div class="media">
+            <img src="assets/images/psc.jpg" , style="padding-left: 22%" />
+          </div>
+        </article>
+        <article>
+          <div class="content">
+            <h2>Pulsar Scintillation</h2>
+            <p>
+              The PSC Scintillation group is a subgroup within the PSC that
+              studies the periodic change in the pulsar's brightness. My role is
+              to process the data using Python. For example, removing
+              interference, generating informative plots, etc.
+            </p>
+          </div>
+          <div class="media">
+            <img src="assets/images/scint.png" />
+          </div>
+        </article>
+        <article>
+          <div class="content">
+            <h2>Independent Research</h2>
+            <p>
+              Did personal research regarding how magnetism emerges from special
+              relativity, providing a detailed derivation of the laws of
+              magnetism from the equations of relativity. Found an intuitive
+              model to understand magnetism. Also working on making an animated
+              YouTube video regarding said research.
+              <a
+                href="assets/Magnetism_as_a_Consequence_of_Special_Relativity.pdf"
+                >Magnetism_as_a_Consequence_of_Special_Relativity</a
+              >
+              .
+            </p>
+          </div>
+          <div class="media" , style="padding-left: 12%; padding-top: 1.5rem">
+            <img
+              src="assets/images/mag.png"
+              ,
+              style="border: 1px solid black"
+            />
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
