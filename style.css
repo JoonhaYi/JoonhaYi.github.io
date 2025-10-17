@@ -211,7 +211,75 @@ time {
 
 
 /* Mobile layout */
-@medi
+/* ===== Mobile fixes ===== */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+/* Make room for the fixed navbar */
+main.wrap { padding-top: 4.5rem; }
+
+/* Navbar should wrap on small screens */
+@media (max-width: 768px) {
+  nav ul { flex-wrap: wrap; }
+  nav ul li { margin-right: 12px; }
+}
+
+/* Background: avoid fixed attachment on mobile (iOS/Android bugs) */
+@media (max-width: 1024px) {
+  body {
+    background-attachment: scroll;
+    background-position: center top;
+  }
+}
+
+/* Sections: tighten outer spacing so they don't overflow */
+@media (max-width: 768px) {
+  section {
+    margin: 16px;
+    padding: 16px;
+  }
+}
+
+/* Project/article layout: stack media above content on phones */
+@media (max-width: 900px) {
+  article {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 12px;
+  }
+  /* Undo the alternating rows on mobile */
+  .project:nth-child(even) { flex-direction: column; }
+
+  /* Media should be full-width on small screens */
+  .media { width: 100%; }
+  .media img,
+  .media video {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
+  /* Nuke big inline paddings/margins from HTML when screen is small */
+  .content { margin: 0 !important; }
+  .project[style],
+  .content[style],
+  .media[style] {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+/* Contact row: remove absolute centering that breaks on mobile */
+@media (max-width: 768px) {
+  .contact_content {
+    position: static;
+    transform: none;
+    margin-left: 0;
+    align-items: flex-start;
+  }
+}
 
 
 
