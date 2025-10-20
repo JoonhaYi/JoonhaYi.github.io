@@ -209,16 +209,6 @@ time {
   border-radius: 12px;
 }
 
-
-/* Mobile layout */
-/* ===== Mobile fixes ===== */
-*,
-*::before,
-*::after { box-sizing: border-box; }
-
-/* Make room for the fixed navbar */
-main.wrap { padding-top: 4.5rem; }
-
 /* Navbar should wrap on small screens */
 @media (max-width: 768px) {
   nav ul { flex-wrap: wrap; }
