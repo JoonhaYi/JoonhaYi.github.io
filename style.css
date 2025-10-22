@@ -15,9 +15,9 @@ body {
 section {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   margin: 1rem;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   background: rgb(41, 41, 41);
   border-radius: 8px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
@@ -33,7 +33,7 @@ article {
   display: flex;
   justify-content: 1rem;
   align-items: center;
-  gap: 5rem;
+  gap: 4rem;
   padding: 15px;
 }
 
@@ -112,8 +112,21 @@ nav ul li a:hover {
   z-index: 11;
 }
 
+/* about */
+#profile {
+  padding-top: 15px;
+}
+
+/* research */
+#research_container {
+  gap: 4rem;
+}
 
 /* projects */
+
+#project_container {
+  padding-top: 1.5rem;
+}
 
 .project {
   padding-left: 1.5rem;
@@ -255,9 +268,9 @@ time {
   section {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
     margin: 0;
-    padding: 1.8rem 2px;
+    padding: 2px;
     background: rgb(46, 46, 46);
     border-radius: 8px;
   }
