@@ -313,6 +313,13 @@ time {
     z-index: 10;
   }
 
+  .button_wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 40px;
+  }
+
   #navbar.open {
     left: 0;
   }
