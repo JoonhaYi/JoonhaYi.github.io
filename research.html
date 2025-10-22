@@ -2,19 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Research | Joonha</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
-      <div id="navbar"></div>
-      <script>
-        fetch("navbar.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("navbar").innerHTML = data;
-          });
-      </script>
+      <div id="navbar_div"></div>
     </header>
     <main class="wrap">
       <h1>Research</h1>
@@ -30,7 +25,7 @@
             </p>
           </div>
           <div class="media">
-            <img src="assets/images/psc.jpg" , style="padding-left: 22%" />
+            <img src="assets/images/psc.jpg" />
           </div>
         </article>
         <article>
@@ -56,18 +51,14 @@
               magnetism from the equations of relativity. Found an intuitive
               model to understand magnetism. Also working on making an animated
               YouTube video regarding said research.
+              <a
+                href="assets/pdfs/Magnetism_as_a_Consequence_of_Special_Relativity.pdf"
+                >pdf</a
+              >
             </p>
           </div>
-          <div class="media" , style="padding-left: 12%; padding-top: 1.5rem">
-            <a
-              href="assets/pdfs/Magnetism_as_a_Consequence_of_Special_Relativity.pdf"
-            >
-              <img
-                src="assets/images/mag.png"
-                ,
-                style="border: 1px solid black"
-              />
-            </a>
+          <div class="media">
+            <img src="assets/images/mag.png" />
           </div>
         </article>
       </section>

@@ -2,19 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Courses and certificates | Joonha</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
-      <div id="navbar"></div>
-      <script>
-        fetch("navbar.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("navbar").innerHTML = data;
-          });
-      </script>
+      <div id="navbar_div"></div>
     </header>
 
     <main class="wrap">
@@ -32,11 +27,7 @@
             </p>
           </div>
           <div class="media">
-            <img
-              src="assets/images/ml.png"
-              style="padding-left: 5%"
-              alt="Machine Learning"
-            />
+            <img src="assets/images/ml.png" />
           </div>
         </article>
 
@@ -46,11 +37,7 @@
             <p>Received a score of 5 on AP Computer Science A.</p>
           </div>
           <div class="media">
-            <img
-              src="assets/images/apcs.png"
-              style="padding-left: 22%"
-              alt="AP Computer Science"
-            />
+            <img src="assets/images/apcs.png" />
           </div>
         </article>
       </section>
@@ -60,14 +47,10 @@
         <article>
           <div class="content">
             <h2>AP Calculus</h2>
-            <p>Received a score of 5 on AP Calculus BC.</p>
+            <p>Received a score of 5 on AP Calculus AB and BC.</p>
           </div>
           <div class="media">
-            <img
-              src="assets/images/apcalc.png"
-              style="padding-left: 15%; max-height: 250px"
-              alt="AP Calculus"
-            />
+            <img src="assets/images/apcalc.png" alt="AP Calculus" />
           </div>
         </article>
 
@@ -80,11 +63,7 @@
             </p>
           </div>
           <div class="media">
-            <img
-              src="assets/images/stat.png"
-              style="padding-left: 15%"
-              alt="Statistics"
-            />
+            <img src="assets/images/stat.png" />
           </div>
         </article>
       </section>
@@ -100,11 +79,7 @@
             </p>
           </div>
           <div class="media">
-            <img
-              src="assets/images/apphy.png"
-              style="padding-left: 10%"
-              alt="AP Physics"
-            />
+            <img src="assets/images/apphy.png" />
           </div>
         </article>
 
@@ -117,11 +92,7 @@
             </p>
           </div>
           <div class="media">
-            <img
-              src="assets/images/physfut.png"
-              style="padding-left: 10%; max-height: 180px"
-              alt="Physics Studies"
-            />
+            <img src="assets/images/physfut.png" />
           </div>
         </article>
       </section>

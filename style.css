@@ -1,55 +1,27 @@
-nav {
-    position: fixed;  /* Keeps the navbar visible while scrolling */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 10px;
-    z-index: 1000;  /* Ensures it stays above other elements */
-}
 
-nav ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-display: flex;
-}
-
-nav ul li {
-margin-right: 20px;
-}
-
-nav ul li a {
-color: white;
-text-decoration: none;
-padding: 10px;
-}
-
-nav ul li a:hover {
-background-color: #555;
-border-radius: 5px;
-}
-
+/* body */
 
 body {
-  background-image: url("assets/backgrounds/background1.jpg");
-  background-size: cover;       /* makes it fill the screen */
-  background-repeat: no-repeat; /* prevents tiling */
-  background-position: center;  /* centers it */
-  background-attachment: fixed; 
-  font-family: system-ui, sans-serif;  background-size: 100%;
-  background-position: 0% 65%;  
+  background-image: url("assets/backgrounds/anime-style-clouds.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 110vh;
+  background-attachment: fixed;
+  font-family: system-ui, sans-serif;
+  color: rgb(220, 220, 220);
 }
 
+/* general */
+
 section {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    margin: 50px;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 1rem;
+  padding: 1rem;
+  background: rgb(41, 41, 41);
+  border-radius: 8px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .wrap {
@@ -58,43 +30,28 @@ section {
   padding: 2rem 1rem;
 }
 
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* PROJECTS LAYOUT */
-
 article {
   display: flex;
+  justify-content: 1rem;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   padding: 15px;
-}
-
-/* Alternate image placement */
-.project:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.media img {
-  max-width: 100%;
-  max-height: 200px;
-  height: auto;
-  width: auto;
-  border-radius: 8px;
-}
-
-.media video {
-  max-width: 100%;
-  max-height: 200px;
-  height: auto;
-  width: auto;
-  border-radius: 8px;
 }
 
 .media {
   flex: 1;
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  align-items: center; 
+  width: 100%
+}
+
+.media img, video{
+  height: auto;
+  width: auto;
+  border-radius: 8px;
+  max-width: 100%;
+  max-height: 11rem;
 }
 
 .content {
@@ -109,71 +66,86 @@ article {
   margin-left: 0.5rem;
 }
 
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+    /* navbar */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222222;
+  padding: 10px;
+  z-index: 10;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.sidebar_button {
+  visibility: hidden;
+  position: relative;
+  z-index: 11;
+}
+
+
+/* projects */
+
+.project {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+
+.project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 time {
   display: block;
   margin-top: 0.5rem;
-  color: #666;
+  color: #747474;
 }
 
-/* Special Notice */
+    /* notice */
+
 .notice {
   margin-top: 3rem;
-  padding-top: 1rem;
-  border-top: 1px solid #ccc;
+  padding-top: 0;
+  gap: 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
-.notice h2 {
+.notice p {
   margin-top: 0;
-  margin-bottom: 0
+  margin-left: 0.5rem;
 }
-
-.contact_content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 1rem;
-    position: absolute;
-  left: 50%;
-  transform: translateX(-50%); /* centers it by its own width */
-}
-
-.contact_content > * {
-  margin: 0;
-}
-
-.contacts_wrap {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact_list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 0;
-}
-
-.contact {
-  width: 15rem;
-  height: 2rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  column-gap: 1rem; /* space between icon and text inside the row */
-  margin: 0;
-  background-color: rgb(235, 235, 241);
-}
-
-.contact .media {
-    position: relative;
-  display: flex;
-  justify-content: space-between; /* push left/right apart */
-  align-items: center;
-}
+    /* interactive video */
 
 .interactive:hover img{
   opacity: 0;
@@ -184,7 +156,7 @@ time {
 }
 
 .interactive img{
-  display: block;           /* remove bottom whitespace from inline images */
+  display: block;        
   width: auto;
   height: auto;
   max-width: 100%;   
@@ -209,67 +181,142 @@ time {
   border-radius: 12px;
 }
 
-/* Navbar should wrap on small screens */
-@media (max-width: 768px) {
-  nav ul { flex-wrap: wrap; }
-  nav ul li { margin-right: 12px; }
+/* contacts */
+
+.contacts_wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Background: avoid fixed attachment on mobile (iOS/Android bugs) */
-@media (max-width: 1024px) {
+.contact_list {
+  display: flex;  
+  flex-direction: column;
+  padding: 1.2rem;
+  gap: 0.5rem;
+  margin-top: 0;
+}
+
+.contact {
+  width: 15rem;
+  height: 2rem;
+  border-radius: 8px;
+  background-color: #242424;
+}
+
+.contact_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact_content > * {
+  margin: 0;
+}
+
+.contact .media {
+  max-width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* mobile gui */
+@media (max-width: 728px) {
   body {
-    background-attachment: scroll;
-    background-position: center top;
+    background-image: none;
+    font-family: sSystem-ui, sans-serif;
+    background-color: rgb(53, 53, 53);
+    color: rgb(220, 220, 220);
   }
-}
 
-/* Sections: tighten outer spacing so they don't overflow */
-@media (max-width: 768px) {
-  section {
-    margin: 16px;
-    padding: 16px;
+  .wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 0.5rem;
   }
-}
 
-/* Project/article layout: stack media above content on phones */
-@media (max-width: 900px) {
   article {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
     padding: 12px;
   }
-  /* Undo the alternating rows on mobile */
-  .project:nth-child(even) { flex-direction: column; }
+  .project:nth-child(even) { flex-direction: column; } 
 
-  /* Media should be full-width on small screens */
-  .media { width: 100%; }
-  .media img,
-  .media video {
-    width: 100%;
-    height: auto;
-    max-height: none;
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0;
+    padding: 2px;
+    background: rgb(46, 46, 46);
+    border-radius: 8px;
   }
 
-  /* Nuke big inline paddings/margins from HTML when screen is small */
-  .content { margin: 0 !important; }
-  .project[style],
-  .content[style],
-  .media[style] {
-    padding: 0 !important;
-    margin: 0 !important;
+  /* contacts */
+
+  .contacts_wrap {
+    align-self: center;
+  }
+
+  .contact {
+    height: 3rem;
+  }
+
+  /* sidebar */
+  
+  nav {
+    flex-direction: column;
+    left: -100%;
+    width: 60%;
+    padding: 1rem;
+    padding-left: 10px;
+    border-radius: 8px;
+  }
+
+  nav ul {
+    list-style-type: disc;
+    padding: 0;
+    padding-top: 2.5rem;
+    list-style-position: inside;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0.2rem;
+    padding: 0.5rem;
+    border-top: 1px solid rgb(108, 108, 108);
+  }
+
+  nav ul li a {
+    color: rgb(220, 220, 220);
+    display: block;
+  }
+
+  .sidebar_button {
+    visibility: visible;
+    background: transparent;
+    color: rgb(220, 220, 220);
+    border: none;
+    font-size: 35px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+
+  #navbar.open {
+    left: 0;
+  }
+
+  #toggle_sidebar.open {
+    position: fixed;
   }
 }
-
-/* Contact row: remove absolute centering that breaks on mobile */
-@media (max-width: 768px) {
-  .contact_content {
-    position: static;
-    transform: none;
-    margin-left: 0;
-    align-items: flex-start;
-  }
-}
-
-
-

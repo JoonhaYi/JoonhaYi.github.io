@@ -5,24 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Joonha</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
-      <div id="navbar"></div>
-      <script>
-        fetch("navbar.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("navbar").innerHTML = data;
-          });
-      </script>
+      <div id="navbar_div"></div>
     </header>
     <main class="wrap">
       <h1>Joonha Yi</h1>
       <section>
         <article>
           <div class="media">
-            <img src="assets/images/project3.jpg" alt="face reveal soon" />
+            <img src="assets/images/portrait.jpg" style="max-height: 100%" />
           </div>
           <div>
             <h2>About me</h2>
@@ -44,11 +38,7 @@
         <article>
           <div class="content">
             <h2>Background</h2>
-            <p>
-              Bio coming soon (I worked my ass off finishing this for PAEG, so
-              if you're from PAEG, I'm pretty sure you already went over like
-              few dozen applications and is happy to not see another bio)
-            </p>
+            <p>Bio coming soon</p>
           </div>
         </article>
       </section>
